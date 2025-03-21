@@ -16,7 +16,7 @@ Meal Mate is a simple yet visually **attractive static website built with HTML, 
 ## 🔹 Installation & Usage  
 1. Clone the repository:  
    ```bash
-   git clone
+   git clone https://shanupri004.github.io/MealMate/
 
 ## 🔹 Screenshots
 ### Homepage  
