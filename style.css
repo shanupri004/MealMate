@@ -1,0 +1,637 @@
+html{
+    scroll-behavior: smooth ;
+}
+body{
+    margin: 0;
+}
+#loader{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white url("./loader.gif") no-repeat center;
+    z-index: 9999;
+    display: block;
+}
+.back{
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)100%, rgba(0,0,0,0.5)100%), url(Back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.name{
+    position: absolute;
+    font-size: 60px;
+    left: 30px;
+    top: 10px;
+    color: white;
+    font-family: Disney;
+}
+span{
+    color: red;
+}
+.navi{
+    position: absolute;
+    font-family: Disney;
+    top: 60px;
+    left: 275px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav a{
+    text-decoration: none;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+nav a:hover{
+    color: red;
+}
+.sign{
+    position: absolute;
+    top: 30px;
+    right: 75px;
+}
+.sign button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Disney;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sign button:hover{
+    background-color: rgb(208, 7, 7);
+}
+.plate{
+    position: absolute;
+    right: 100px;
+    top: 130px;
+}
+.plate img{
+    width: 400px;
+    height: 400px;
+    animation: rotateImage 3s linear infinite;
+}
+@keyframes rotateImage {
+    0%{
+        transform: rotate3d(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    } 
+}
+.content{
+    position: absolute;
+    top: 175px;
+    left: 100px;
+    align-items: center;
+}
+.content p{
+    margin: 0;
+    font-size: 80px;
+    font-family: Wake The Warrior;
+    color: white;
+}
+.content1{
+    position: absolute;
+    width: 90%;
+    left: 10%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Disney;
+}
+.btn{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(208, 7, 7);
+}
+.btn1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: Disney;
+}
+.btn1{
+    position: absolute;
+    left: 170px;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: rgb(218, 218, 218);
+}
+.about{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 550px;
+}
+.img{
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    top: 1%;
+}
+.img1{
+    position: absolute;
+    margin: 15px;
+	border-radius: 5px;
+    width: 200px;
+    height: 250px;
+}
+.img2{
+    position: absolute;
+    margin: 15px;
+	border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    top: 260px;
+}
+.img3{
+    position: absolute;
+    margin: 15px;
+	border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    top: 112.5px;
+    left: 230px;
+}
+.about1{
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 1%;
+    font-family: Disney;
+}
+.about1 h1{
+    color: red;
+}
+p{
+    font-size: 25px;
+}
+.book{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+.video{
+    position: absolute;
+    background-color: yellow;
+    width: 40%;
+    left: 5%;
+    top: 5%;
+}
+.video img{
+    position: absolute;
+    margin: 5px;
+    margin-right: 0;
+    width: 440px;
+    height: 400px;
+}
+.icon{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+#videoPopup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content{
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.form{
+    position: absolute;
+    background-color: rgb(28, 26, 26);
+    width: 50%;
+    height: 400px;
+    font-family: Disney;
+    right: 5%;
+    top: 6%;   
+}
+.form h2{
+    margin: 0;
+    color: red;
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.form h1{
+    margin: 0;
+    color: white;
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 50px;
+}
+.table1 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Disney;
+}
+.table1 input{ 
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    margin: 2px;
+    font-family: Disney;
+    font-size: 30px;
+}
+.table1 select{
+    width: 260px;
+    height: 45px;
+    padding: 5px;
+    margin: 2px;
+    font-family: Disney;
+    font-size: 30px;
+}
+.table2{
+    position: absolute;
+    width: 100%;
+    top: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table2 textarea{
+    width: 530px;
+    margin: 2px;
+    height: 120px;
+    resize: none;
+    font-family: Disney;
+    font-size: 30px;
+}
+.table2 button{
+    width: 530px;
+    margin: 2px;
+    height: 50px;
+    font-size: 40px;
+    border: none;
+    left: 5px;
+    color: white;
+    font-family: Disney;
+    background-color: red;
+    cursor: pointer;
+}
+.table2 button:hover{
+    background-color: rgb(208, 7, 7);
+}
+.end{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(28, 26, 26);
+    display: flex;
+    flex-direction: row;
+}
+.comp{
+    position: absolute;
+    top: 5%;
+    width: 23%;
+    left: 5%;
+}
+.cont{
+    position: absolute;
+    top: 5%;
+    width: 23%;
+    left: 40%;
+}
+.opening{
+    position: absolute;
+    top: 5%;
+    width: 23%;
+    right: 5%;
+}
+.end h1{
+    margin: 0;
+    color: Red;
+    font-weight: lighter;
+    font-family: Disney;
+    text-align: center;
+    font-size: 40px;
+}
+.end hr{
+    border: 0;
+    height: 2px;
+    background-color: red;
+}
+.end .add{
+    position: absolute;
+    width: 400px;
+    left: 0px;
+    font-size: 15px;
+    font-family: Disney;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.end .phone{
+    position: absolute;
+    width: 400px;
+    left: 0px;
+    font-size: 15px;
+    font-family: Disney;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.end .mail{
+    position: absolute;
+    width: 400px;
+    left: 0px;
+    font-size: 15px;
+    font-family: Disney;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Disney;
+}
+.end a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Disney;
+    transition: ease-in-out 0.3s;
+}
+.end a:hover{
+    color: red;
+}
+.foot{
+    position: absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    top: 280px;
+    width: 60%;
+    text-align: center;
+    left:20%;
+}
+.thank{
+    display: none;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    font-family: Disney;
+}
+.thank h2{
+    margin: 0;
+    color: #4caf50;
+    font-size: 60px;
+}
+.thank p{
+    font-size: 40px;
+    color: #333;
+}
+.thank button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.blur{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.signup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    font-family: Disney;
+}
+.signup h1{
+    margin: 0;
+    font-size: 60px;
+    font-weight: lighter;
+    color: red;
+    text-align: center;
+}
+.signup button{
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    font-size: 30px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: ease-in-out 0.3s;
+}
+.signup button:hover{
+    color: red;
+}
+.signup input{
+    width: 100%;
+    height: 33px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: Disney;
+}
+.signup input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    accent-color: green;
+    cursor: pointer;
+}
+.signup p{
+    font-size: 20px;
+}
+.signup h3{
+    margin: 0;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.signup a{
+    text-decoration: none;
+    color: red;
+}
+.signup a:hover{
+    color: black;
+}
+.signup .btn{
+    text-decoration: none;
+    position: absolute;
+    font-size: 30px;
+    font-family: Disney;
+    top: 270px;
+    right: 90px;
+    color: red;
+    background: transparent;
+}
+.signup .btn:hover{
+    background: transparent;
+    color: black;
+}
+.login{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    font-family: Disney;
+}
+.login span{
+    color: red;
+}
+.login h1{
+    margin: 0;
+    font-size: 60px;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+.login input{
+    width: 80%;
+    height: 33px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: Disney;
+}
+.login p{
+    font-size: 20px;
+}
+.login h3{
+    margin: 0;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.login .btn{
+    position: absolute;
+    top: 235px;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    background-color: transparent;
+    color: red;
+}
+.login .btn:hover{
+    border: none;
+    color: black;
+}
+.login button{
+    width: 50%;
+    height: 40px;     
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: red;  
+    font-size: 25px;
+    font-family: Disney;
+    margin-top: 30px;
+    transition: ease-in-out 0.3s;
+}
+.login button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.media i{
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.media i:hover{
+    color: black;
+}

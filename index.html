@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Mate</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="loader"></div>
+    <div class="back" id="Home">
+        <div class="name"><span>M</span>eal<span>M</span>ate</div>
+        <div class="navi">
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="./menu.html" target="_blank">Menu</a>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div class="sign">
+            <button onclick="opensignup()">Sign up</button>
+        </div>
+        <div class="content">
+            <p>it's not just</p>
+            <p>Food, It's an</p>
+            <p>Emotions</p>
+            <br>
+           <div class="content1">
+            <button class="btn"><a href="./menu.html" target="_blank">Oder now</a></button>
+            <button class="btn1"><a href="#book">Book a Table</a></button>
+           </div>
+        </div>
+        <div class="plate">
+            <img src="./plate.png" alt="">
+        </div>
+    </div>
+    <div id="about" class="about">
+        <div class="img">
+            <img src="./ambience.jpg" alt="" class="img1">
+            <img src="./familytable.jpg" alt="" class="img2">
+            <img src="./couple dinner.jpg" alt="" class="img3">
+        </div>
+        <div class="about1">
+            <h1>About us </h1>
+            <p>Welcome to <span>M</span>eal <span>M</span>ate, a place where passion
+                for food meets the art of hospitality. Our journey began with a vision to create a welcoming space where friends, families, and food lovers could come together to enjoy exceptional meals. <br> <br>
+
+                We focus on using the freshest ingredients, crafting each dish with care and attention to detail. From classic favorites to unique creations, our menu is designed to offer something for everyone. Our team is committed to providing not just a meal, but an experience that leaves you satisfied and inspired. <br> <br>
+                
+                At <span>M</span>eal <span>M</span>ate, every visit is a celebration of good food, great company, and unforgettable moments. Join us and let us take care of the rest.</p>
+        </div>
+    </div>
+    <div class="book" id="book">
+        <div class="video">
+            <img src="./videopic.jpg" alt="">
+            <a href="#"  class="icon" onclick="openPopup()">
+                <i class="fa-solid fa-circle-play"> Play Now</i>
+            </a>
+        </div>
+        <div class="form">
+            <h2>Reservation</h2>
+            <h1>Book A Table Online</h1>
+            <table class="table1">
+                <tr>
+                    <td><input type="text" placeholder="Your Name" required></td>
+                    <td><input type="text" placeholder="Your Email" required></td>
+                </tr>
+                <tr>
+                    <td><input type="datetime-local" placeholder="date&time" required></td>
+                    <td><select required>
+                        <option>No of Person</option>
+                        <option>Single</option>
+                        <option>Couple</option>
+                        <option>Person of 3</option>
+                        <option>Person of 4</option>
+                        <option>Person of 5+</option>
+                    </select></td>
+                </tr>
+            </table>
+            <table class="table2">
+                <tr>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" onclick="openThankyou()">Book Now</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="thank" id="thank">
+        <h2>Thank You!</h2>
+        <p>Your table has been sucessfully booked</p>
+        <button onclick="hideThankyou()">Close</button>
+    </div>
+    <div id="videoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <video controls width="100%">
+                <source src="./promo video.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div id="contact" class="end">
+        <div class="comp">
+            <h1>Company</h1><hr>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Contact us</h1><hr>
+            <a href="#"  class="add" style="font-size: 25px;">
+                <i class="fa-solid fa-location-dot"></i> 12 A, Highway, Chennai-006
+            </a> <br> <br>
+            <a href="#"  class="phone"  style="font-size: 25px;">
+                <i class="fa-solid fa-phone"></i> +91 9876543210
+            </a> <br> <br>
+            <a href="#"  class="mail"  style="font-size: 35px;">
+                <i class="fa-solid fa-envelope"> </i> mealmate.food@gmail.com
+            </a> <br>
+        </div>
+        <div class="opening">
+            <h1>Opening</h1><hr>
+            <ul>
+                <li>Monday - Saturday</li>
+                <li>09 Am - 09 Pm</li>
+                <li>Sunday</li>
+                <li>10 Am - 08 Pm</li>
+            </ul>
+        </div>
+        <div class="foot">
+            &copy; MealMate, All Rights Reserved. Designed By Shanmugapriya Iyappan 
+            <br>
+        </div>
+    </div>
+    <div class="blur" id="blur"></div>
+    <div class="signup" id="signup">
+        <h1>Sign up</h1>
+        <button onclick="closesignup()">&times;</button>
+        <input type="text"  placeholder="Full Name">
+        <input type="email"  placeholder="Email"> 
+       <p><input type="checkbox" id=""> I agree to MealMate <a href="">Term of Service.</a>
+        <a href="">Privacy policy</a>and <a href="">content Policies</a></p> 
+        <h3>already have an acccount?<button class="btn" onclick="openlogin()">Login</button></h3>
+    </div>
+    <div class="login" id="login">
+        <h1><span>M</span>eal <span>M</span>ate</h1>
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Email"> <br>
+        <i class="fa-solid fa-key"></i>
+        <input type="password" placeholder="password">
+        <button onclick="closelogin()">Login</button>
+        <p>Don't have an acccount?<button class="btn" onclick="openLsignup()">Sign up</button></p>
+        <div class="media">
+            <h3>Connect with us</h3>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            setTimeout(()=>{
+                document.getElementById("loader").style.display = "none";
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

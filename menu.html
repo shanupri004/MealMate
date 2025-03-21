@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Mate</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div id="loader"></div>
+<body>
+    <div class="dashboard">
+        <h1><span>M</span>eal <span>M</span>ate</h1>
+        
+        <button><i class="fa-solid fa-pizza-slice"></i> Food Order</button>
+
+        <button onclick="openFeedback()"><i class="fa-regular fa-comment"></i> Feedback</button>
+
+        <button><i class="fa-solid fa-clock-rotate-left"></i> Order History</button>
+
+        <button><i class="fa-regular fa-credit-card"></i> Payment Details</button>
+
+        <button><i class="fa-solid fa-gear"></i> Customization</button>
+    </div>
+    <div class="category" id="cat">
+       <div class="search">
+            <input type="search" name="" id="search" placeholder="Search food here....."> 
+            <button class="serbtn" onclick="srch()"><i class="fa-solid fa-search"></i></button>
+            <h2 id="print"></h2>
+       </div>
+       <div class="explore" id="expo">
+        <h2>Explore Categories</h2>
+            <button class="dish" onclick="Tiff()">Tiffin</button>
+            <button class="dish" onclick="Cak()">Cake</button>
+            <button class="dish" onclick="Des()">Snacks & Desserts</button>
+            <button class="dish" onclick="Drk()">Drink</button>
+            <button class="dish" onclick="Mc()">Main course</button>
+       </div>
+    </div>
+    <div class="Tiffin" id="tiffin">
+        <h1>Tiffin</h1>
+        <div class="items">
+            <div class="item">
+                <img src="./Tiffin/Tif (1).jpg" alt="">
+                <h3>Onion Uthappam</h3>
+                <p>&#8377 80</p>
+                <button class="whish">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (2).jpg" alt="">
+                <h3>Wheat Dosa</h3>
+                <p>&#8377 60</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (3).jpg" alt="">
+                <h3>Aappam</h3>
+                <p>&#8377 25</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (4).jpg" alt="">
+                <h3>Tomato Dosa</h3>
+                <p>&#8377 70</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (5).jpg" alt="">
+                <h3>Podi Uthappam</h3>
+                <p>&#8377 80</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (6).jpg" alt="">
+                <h3>Idiyappam</h3>
+                <p>&#8377 30</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (7).jpg" alt="">
+                <h3>Masala Dosa</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (8).jpg" alt="">
+                <h3>Butter Roast</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (9).jpg" alt="">
+                <h3>Honey Toast</h3>
+                <p>&#8377 100</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (11).jpg" alt="">
+                <h3>Idly</h3>
+                <p>&#8377 40</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (12).jpg" alt="">
+                <h3>Rava Kitchadi</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (13).jpg" alt="">
+                <h3>Masala Chappathi</h3>
+                <p>&#8377 180</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (14).jpg" alt="">
+                <h3>Pongal</h3>
+                <p>&#8377 80</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (15).jpg" alt="">
+                <h3>Puri</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <!-- <div class="item">
+                <img src="./Tiffin/Tif (16).jpg" alt="">
+                <h3>Steamed Puttu</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./Tiffin/Tif (17).jpg" alt="">
+                <h3>Rava Dosa</h3>
+                <p>&#8377 80</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="Cake" id="cake">
+        <h1>Cake</h1>
+        <div class="items">
+            <div class="item">
+                <img src="./cake/Ck (1).jpg" alt="">
+                <h3>Red Wedding Cake</h3>
+                <p>&#8377 750</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (2).jpg" alt="">
+                <h3>Red Velvet Cake</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (3).jpg" alt="">
+                <h3>Teaddy Bear Cake</h3>
+                <p>&#8377 550</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (4).jpg" alt="">
+                <h3>Rainbow CupCake</h3>
+                <p>&#8377 490</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (7).jpg" alt="">
+                <h3>Special Valetine Cake</h3>
+                <p>&#8377 650</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (8).jpg" alt="">
+                <h3>Wedding 4 stack Cake</h3>
+                <p>&#8377 1400</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (9).jpg" alt="">
+                <h3>Wedding 3 stackCake</h3>
+                <p>&#8377 950</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (10).jpg" alt="">
+                <h3>Fruit Topping Cake</h3>
+                <p>&#8377 750</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (11).jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <p>&#8377 450</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (12).jpg" alt="">
+                <h3>Choco truffle Cake</h3>
+                <p>&#8377 650</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (13).jpg" alt="">
+                <h3>Choco Ganache Cake</h3>
+                <p>&#8377 450</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (14).jpg" alt="">
+                <h3>Pink Theme Cake</h3>
+                <p>&#8377 580</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (15).jpg" alt="">
+                <h3>Butterfly Theme Cake</h3>
+                <p>&#8377 880</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (16).jpg" alt="">
+                <h3>Black Forest Piece Cake</h3>
+                <p>&#8377 280</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (17).jpg" alt="">
+                <h3>Aqua Theme Cake</h3>
+                <p>&#8377 990</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (18).jpg" alt="">
+                <h3>White Compontant Cake</h3>
+                <p>&#8377 1800</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (19).jpg" alt="">
+                <h3>Candy Cake</h3>
+                <p>&#8377 990</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (20).jpg" alt="">
+                <h3>Butter scotch</h3>
+                <p>&#8377 650</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (21).jpg" alt="">
+                <h3>Lady Boss Cake</h3>
+                <p>&#8377 740</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (22).jpg" alt="">
+                <h3>Influncer Cake</h3>
+                <p>&#8377 550</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (23).jpg" alt="">
+                <h3>Anniversary Cake</h3>
+                <p>&#8377 850</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (24).jpg" alt="">
+                <h3>Baby Shower Cake</h3>
+                <p>&#8377 550</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (25).jpg" alt="">
+                <h3>Kids Customized BDay Cake</h3>
+                <p>&#8377 950</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (26).jpg" alt="">
+                <h3>Rainbow piece Cake</h3>
+                <p>&#8377 330</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <!-- <div class="item">
+                <img src="./cake/Ck (27).jpg" alt="">
+                <h3>Cheese piece Cake</h3>
+                <p>&#8377 250</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./cake/Ck (28).jpg" alt="">
+                <h3>Teder Coconut Cake</h3>
+                <p>&#8377 960</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="Dessert" id="dessert">
+        <h1>Snacks & Desserts</h1>
+        <div class="items">
+            <div class="item">
+                <img src="./desserts/des (1).jpg" alt="">
+                <h3>Corrisant</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (2).jpg" alt="">
+                <h3>Egg Puff</h3>
+                <p>&#8377 70</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (3).jpg" alt="">
+                <h3>Samosa</h3>
+                <p>&#8377 45</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (4).jpg" alt="">
+                <h3>Sandwich</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (5).jpg" alt="">
+                <h3>Wafers</h3>
+                <p>&#8377 130</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (6).jpg" alt="">
+                <h3>Veg Puff</h3>
+                <p>&#8377 60</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (7).jpg" alt="">
+                <h3>Pan Cake</h3>
+                <p>&#8377 240</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (8).jpg" alt="">
+                <h3>Doghnut</h3>
+                <p>&#8377 230</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (9).jpg" alt="">
+                <h3>Kaju Katli</h3>
+                <p>&#8377 550</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (10).jpg" alt="">
+                <h3>Tidamisu</h3>
+                <p>&#8377 250</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (11).jpg" alt="">
+                <h3>Nuts Shot</h3>
+                <p>&#8377 220</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (12).jpg" alt="">
+                <h3>Strawberry Plater</h3>
+                <p>&#8377 210</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (13).jpg" alt="">
+                <h3>ButterScotch Icecream</h3>
+                <p>&#8377 360</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (14).jpg" alt="">
+                <h3>Bluberry Icecream</h3>
+                <p>&#8377 280</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (15).jpg" alt="">
+                <h3>Strawberry Icecream</h3>
+                <p>&#8377 350</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (16).jpg" alt="">
+                <h3>Chocolate Icecream</h3>
+                <p>&#8377 250</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (17).jpg" alt="">
+                <h3>Vannila Icecream</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (19).jpg" alt="">
+                <h3>Bites</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (20).jpg" alt="">
+                <h3>Kulfi</h3>
+                <p>&#8377 85</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (21).jpg" alt="">
+                <h3>Brownie</h3>
+                <p>&#8377 450</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (22).jpg" alt="">
+                <h3>Dream Cake</h3>
+                <p>&#8377 500</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (23).jpg" alt="">
+                <h3>Gulab Jamun</h3>
+                <p>&#8377 500</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (24).jpg" alt="">
+                <h3>Rasamalai</h3>
+                <p>&#8377 600</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (25).jpg" alt="">
+                <h3>Rasakula</h3>
+                <p>&#8377 400</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (26).jpg" alt="">
+                <h3>Tender Coconut Payasam</h3>
+                <p>&#8377 320</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (27).jpg" alt="">
+                <h3>Chocolate Bomb</h3>
+                <p>&#8377 380</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <!-- <div class="item">
+                <img src="./desserts/des (29).jpg" alt="">
+                <h3>waffles</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./desserts/des (30).jpg" alt="">
+                <h3>Apple Pie</h3>
+                <p>&#8377 230</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="Drink" id="drink">
+        <h1>Drink</h1>
+        <div class="items">
+            <div class="item">
+                <img src="./drink/drk (1).jpg" alt="">
+                <h3>Oreo Milkshake</h3>
+                <p>&#8377 180</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (3).jpg" alt="">
+                <h3>Lemon Juice</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (4).jpg" alt="">
+                <h3>Mango Juice</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (5).jpg" alt="">
+                <h3>pomegranate Juice</h3>
+                <p>&#8377 210</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (6).jpg" alt="">
+                <h3>Orange Juice</h3>
+                <p>&#8377 100</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (7).jpg" alt="">
+                <h3>Rose Milk</h3>
+                <p>&#8377 130</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (8).jpg" alt="">
+                <h3>Badam Milk</h3>
+                <p>&#8377 130</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (9).jpg" alt="">
+                <h3>Pista Milk</h3>
+                <p>&#8377 250</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (10).jpg" alt="">
+                <h3>Grape Juice</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (11).jpg" alt="">
+                <h3>Apple Juice</h3>
+                <p>&#8377 200</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (12).jpg" alt="">
+                <h3>Blue Berry</h3>
+                <p>&#8377 210</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (14).jpg" alt="">
+                <h3>Water Melon</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (16).jpg" alt="">
+                <h3>Combo Milkshake</h3>
+                <p>&#8377 200</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (17).jpg" alt="">
+                <h3>Cappuccino</h3>
+                <p>&#8377 350</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (18).jpg" alt="">
+                <h3>Filer Coffee</h3>
+                <p>&#8377 180</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (19).jpg" alt="">
+                <h3>Cold Coffee</h3>
+                <p>&#8377 130</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (20).jpg" alt="">
+                <h3>Espersso</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (21).jpg" alt="">
+                <h3>Falooda</h3>
+                <p>&#8377 100</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <!-- <div class="item">
+                <img src="./drink/drk (29).jpg" alt="">
+                <h3>Milk Tea</h3>
+                <p>&#8377 60</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./drink/drk (15).jpg" alt="">
+                <h3>Fresh Juice</h3>
+                <p>&#8377 180</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="MainCourse" id="mainCourse">
+        <h1>Main course</h1>
+        <div class="items">
+            <div class="item">
+                <img src="./main core/MC (1).jpg" alt="">
+                <h3>Fried Fish Briyani</h3>
+                <p>&#8377 300</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (2).jpg" alt="">
+                <h3>Chicken Butter Masala</h3>
+                <p>&#8377 190</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (3).jpg" alt="">
+                <h3>Chicken Briyani</h3>
+                <p>&#8377 250</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (4).jpg" alt="">
+                <h3>Chicken Burger</h3>
+                <p>&#8377 180</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (5).jpg" alt="">
+                <h3>Chicken Fried Rice</h3>
+                <p>&#8377 200</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (6).jpg" alt="">
+                <h3>Steamed Grill Chicken</h3>
+                <p>&#8377 190</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (7).jpg" alt="">
+                <h3>Chicken Pizza</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (8).jpg" alt="">
+                <h3>Fried Fish</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (9).jpg" alt="">
+                <h3>Grilled Fish</h3>
+                <p>&#8377 150</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (10).jpg" alt="">
+                <h3>Mutton Briyani</h3>
+                <p>&#8377 350</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (11).jpg" alt="">
+                <h3>Mutton Butter Masala</h3>
+                <p>&#8377 330</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (12).jpg" alt="">
+                <h3>Chicken Curry</h3>
+                <p>&#8377 260</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (13).jpg" alt="">
+                <h3>Non-Veg Meal</h3>
+                <p>&#8377 400</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (14).jpg" alt="">
+                <h3>Onam Satya</h3>
+                <p>&#8377 350</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (15).jpg" alt="">
+                <h3>Prawn Fry</h3>
+                <p>&#8377 300</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (16).jpg" alt="">
+                <h3>Shawarma</h3>
+                <p>&#8377 120</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (17).jpg" alt="">
+                <h3>Shrimp Fry</h3>
+                <p>&#8377 350</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (18).jpg" alt="">
+                <h3>Veg Fried Rice</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (19).jpg" alt="">
+                <h3>Veg Burger</h3>
+                <p>&#8377 160</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (20).jpg" alt="">
+                <h3>Veg Meals</h3>
+                <p>&#8377 230</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <!-- <div class="item">
+                <img src="./main core/MC (21).jpg" alt="">
+                <h3>Veg Pizza</h3>
+                <p>&#8377 140</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="./main core/MC (22).jpg" alt="">
+                <h3>Mushroom Fried Rice</h3>
+                <p>&#8377 200</p>
+                <button class="whish" onclick="Wh()">Whishlist</button>
+                <button class="order" onclick="Od()">Order Now</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+    <div class="overlay" id="overlay"></div>
+    <div class="feedback" id="feedback">
+        <button class="x" onclick="closeFeedback()">&times;</button>
+        <h2>Tell us what you think</h2>
+        <textarea placeholder="Enter you Feedback...."></textarea>
+        <button class="feed" onclick="alertF()">Send Feedback</button>
+    </div>
+    <div class="whishlist" id="order">
+        <h1>Thank You for Your Order</h1>
+        <button class="ac" onclick="exit()">Ok</button>
+    </div>
+    <div class="whishlist" id="whish">
+        <h1>Your Product Sucessfully Order to Whishlist <i class="fa-solid fa-check"></i></h1>
+        <button class="ac" onclick="exit()">Ok</button>
+    </div>
+    <script src="menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            setTimeout(()=>{
+                document.getElementById("loader").style.display = "none";
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
