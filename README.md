@@ -20,14 +20,17 @@ Meal Mate is a simple yet visually **attractive static website built with HTML, 
 
 ## 🔹 Screenshots
 ### Homepage  
-![Homepage Screenshot](images/Hompage.png)
-![Homepage -> SignUp Screenshot](images/SignUp.png)
-![Homepage -> Login Screenshot](images/Login.png)
-![Homepage -> AboutUS Screenshot](images/AboutUS.png)
-![Homepage -> Booka table Screenshot](images/Hompage.png)
-![Homepage -> promo video palying Screenshot](images/Hompage.png)
-![Homepage -> contactUs Screenshot](images/Hompage.png)
+![Homepage Screenshot](Screenshots/Hompage.png)
+![Homepage -> SignUp Screenshot](Screenshots/SignUp.png)
+![Homepage -> Login Screenshot](Screenshots/Login.png)
+![Homepage -> AboutUS Screenshot](Screenshots/AboutUS.png)
+![Homepage -> Booka table Screenshot](Screenshots/Book%20a%20Table.png)
+![Homepage -> promo video palying Screenshot](Screenshots/Promo%20Video.png)
+![Homepage -> contactUs Screenshot](Screenshots/ContactUS.png)
 
-### Additional Page  
-![Additional Page Screenshot](images/extra-page.png)
+### Menupage  
+![Menuage Screenshot](Screenshots/Menu%20Page.png)
+![Menuage -> feedback Screenshot](Screenshots/Feedback.png)
+![Menuage -> click Screenshot](Screenshots/click%20to%20tiffin.png)
+![Menuage -> menus Screenshot](Screenshots/Tiffin%20categories.png)
 
