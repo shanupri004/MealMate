@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Mate</title>
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./menu.css">
+</head>
+<body>
+  <div id="loader"></div>
+    <button class="menu-toggle" onclick="show()"><i class="fas fa-bars"></i></button>
+    <div class="sidebar" id="sidebar" style="display: block;">
+        <button class="close-sidebar" style="border: none; color: black;">X</button>
+        <h2 style="font-family: disney; color: black;"><span style="color: red;">M</span>eal <span style="color: red;">M</span>ate</h2>
+        <button class="btn btn-light"><i class="fas fa-pizza-slice"></i> Food Order</button>
+        <button class="btn btn-light"><i class="fas fa-comment"></i> Feedback</button>
+        <button class="btn btn-light"><i class="fas fa-history"></i> Order History</button>
+        <button class="btn btn-light"><i class="fas fa-credit-card"></i> Payment Details</button>
+        <button class="btn btn-light"><i class="fas fa-cog"></i> Customization</button>
+    </div>
+    <div class="content">
+        <div class="search-box">
+            <input type="text" class="form-control" placeholder="Search food here......">
+            <button class="btn btn-danger" style="margin-left: 10px;"><i class="fas fa-search"></i></button>
+        </div>
+        <h3>Explore Categories</h3>
+        <div class="categories">
+            <button class="btn btn-light" onclick="tif()">Tiffin</button>
+            <button class="btn btn-light" onclick="cake()">Cake</button>
+            <button class="btn btn-light" onclick="snack()">Snacks & Desserts</button>
+            <button class="btn btn-light" onclick="drnk()">Drink</button>
+            <button class="btn btn-light" onclick="mc()">Main Course</button>
+        </div>
+        <div class="container" id="tiffin" style="display: none;">
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (1).jpg" alt="">
+                    <h2>Puttu</h2>
+                    <h1 style="color: red;">&#8377 100</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (2).jpg" alt="">
+                    <h2>Appam</h2>
+                    <h1 style="color: red;">&#8377 80</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (3).jpg" alt="">
+                    <h2>Dosa</h2>
+                    <h1 style="color: red;">&#8377 60</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (4).jpg" alt="">
+                    <h2>Honey Bread</h2>
+                    <h1 style="color: red;">&#8377 90</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (5).jpg" alt="">
+                    <h2>Idiappam</h2>
+                    <h1 style="color: red;">&#8377 80</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (6).jpg" alt="">
+                    <h2>Idli</h2>
+                    <h1 style="color: red;">&#8377 60</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (8).jpg" alt="">
+                    <h2>Pongal</h2>
+                    <h1 style="color: red;">&#8377 110</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (9).jpg" alt="">
+                    <h2>Poori</h2>
+                    <h1 style="color: red;">&#8377 70</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item"  >
+                    <img src="./Tiffin/Tif (10).jpg" alt="">
+                    <h2>layar parotta</h2>
+                    <h1 style="color: red;">&#8377 90</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./Tiffin/Tif (7).jpg" alt="">
+                    <h2>Rava Kitchadi</h2>
+                    <h1 style="color: red;">&#8377 60</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="cake" style="display: none;">
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="./cake/cake (1).jpg" alt="">
+                    <h2>customised cake</h2>
+                    <h1 style="color: red;">&#8377 600</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (2).jpg" alt="">
+                    <h2>Red velvet</h2>
+                    <h1 style="color: red;">&#8377 600</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (3).jpg" alt="">
+                    <h2>Aniversary cake</h2>
+                    <h1 style="color: red;">&#8377 850</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (4).jpg" alt="">
+                    <h2>Muffin</h2>
+                    <h1 style="color: red;">&#8377 450</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (5).jpg" alt="">
+                    <h2>Black Forest cake</h2>
+                    <h1 style="color: red;">&#8377 650</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (6).jpg" alt="">
+                    <h2>cheese cake</h2>
+                    <h1 style="color: red;">&#8377 550</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (9).jpg" alt="">
+                    <h2>choco truffle cake</h2>
+                    <h1 style="color: red;">&#8377 570</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (8).jpg" alt="">
+                    <h2>coconut cake</h2>
+                    <h1 style="color: red;">&#8377 650</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item"  >
+                    <img src="./cake/cake (10).jpg" alt="">
+                    <h2>Stack cake</h2>
+                    <h1 style="color: red;">&#8377 1200</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./cake/cake (7).jpg" alt="">
+                    <h2>Rainbow cake</h2>
+                    <h1 style="color: red;">&#8377 900</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="sd" style="display: none;">
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="./desserts/snack (1).jpg" alt="">
+                    <h2>Gulab Jamun</h2>
+                    <h1 style="color: red;">&#8377 150</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (2).jpg" alt="">
+                    <h2>Rasamalayi</h2>
+                    <h1 style="color: red;">&#8377 250</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (3).jpg" alt="">
+                    <h2>Crossaint</h2>
+                    <h1 style="color: red;">&#8377 300</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (4).jpg" alt="">
+                    <h2>Sand witch</h2>
+                    <h1 style="color: red;">&#8377 180</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (5).jpg" alt="">
+                    <h2>Waffles</h2>
+                    <h1 style="color: red;">&#8377 160</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (6).jpg" alt="">
+                    <h2>Rasagulla</h2>
+                    <h1 style="color: red;">&#8377 130</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (8).jpg" alt="">
+                    <h2>Veg Puffs</h2>
+                    <h1 style="color: red;">&#8377 70</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (9).jpg" alt="">
+                    <h2>samosa</h2>
+                    <h1 style="color: red;">&#8377 60</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item"  >
+                    <img src="./desserts/snack (10).jpg" alt="">
+                    <h2>Kaju kattli</h2>
+                    <h1 style="color: red;">&#8377 90</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./desserts/snack (7).jpg" alt="">
+                    <h2>Egg Puff</h2>
+                    <h1 style="color: red;">&#8377 90</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="drink" style="display: none;">
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="./drink/drnk (1).jpg" alt="">
+                    <h2>Rose Milk</h2>
+                    <h1 style="color: red;">&#8377 100</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (2).jpg" alt="">
+                    <h2>Badam Milk</h2>
+                    <h1 style="color: red;">&#8377 100</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (3).jpg" alt="">
+                    <h2>Tea</h2>
+                    <h1 style="color: red;">&#8377 40</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (4).jpg" alt="">
+                    <h2>Filter Coffee</h2>
+                    <h1 style="color: red;">&#8377 80</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (5).jpg" alt="">
+                    <h2>Espresso</h2>
+                    <h1 style="color: red;">&#8377 60</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (6).jpg" alt="">
+                    <h2>Cappuccino</h2>
+                    <h1 style="color: red;">&#8377 200</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (8).jpg" alt="">
+                    <h2>Oreo Milkshake</h2>
+                    <h1 style="color: red;">&#8377 110</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (9).jpg" alt="">
+                    <h2>Falooda</h2>
+                    <h1 style="color: red;">&#8377 120</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (10).jpg" alt="">
+                    <h2>Pista Milk</h2>
+                    <h1 style="color: red;">&#8377 90</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./drink/drnk (7).jpg" alt="">
+                    <h2>Fresh Juice</h2>
+                    <h1 style="color: red;">&#8377 60</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="lunch" style="display: none;">
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="./main core/lunch (1).jpg" alt="">
+                    <h2>Onam Satya</h2>
+                    <h1 style="color: red;">&#8377 400</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (2).jpg" alt="">
+                    <h2>Chicken Briyani</h2>
+                    <h1 style="color: red;">&#8377 300</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (3).jpg" alt="">
+                    <h2>Cicken Rice</h2>
+                    <h1 style="color: red;">&#8377 150</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (4).jpg" alt="">
+                    <h2>South meals</h2>
+                    <h1 style="color: red;">&#8377 200</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (5).jpg" alt="">
+                    <h2>Pizza</h2>
+                    <h1 style="color: red;">&#8377 250</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (6).jpg" alt="">
+                    <h2>Veg Rice</h2>
+                    <h1 style="color: red;">&#8377 130</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (8).jpg" alt="">
+                    <h2>Burger</h2>
+                    <h1 style="color: red;">&#8377 230</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (9).jpg" alt="">
+                    <h2>Shawarma</h2>
+                    <h1 style="color: red;">&#8377 220</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item"  >
+                    <img src="./main core/lunch (10).jpg" alt="">
+                    <h2>Panner Butter Masala</h2>
+                    <h1 style="color: red;">&#8377 200</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="./main core/lunch (7).jpg" alt="">
+                    <h2>Fish Fry</h2>
+                    <h1 style="color: red;">&#8377 180</h1>
+                    <button style="width: 40%; background-color:#d3d3d3;border: none;color:black;">Order Now</button>
+                    <button style="width: 40%; background-color:red;border: none;color: white;">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+                  setTimeout(()=>{
+                      document.getElementById("loader").style.display = "none";
+                  }, 3000);
+              });
+      </script>
+    <script src="menu.js"></script>
+</body>
+</html>
